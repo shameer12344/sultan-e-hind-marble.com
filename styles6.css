@@ -1,0 +1,108 @@
+.blog article {
+    margin: 20px 0;
+    text-align: left;
+}
+.blog h3 {
+    color: #00796b;
+}
+body{
+    font-family: sans-serif;
+}
+.blog .container h2{
+    text-align: center;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #004d40;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+/* Media Queries */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        /*display: none; /* Hide links by default */
+        width: 100%;
+        background: #004d40; /* Match navbar color */
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        left: 0;
+        padding: 15px 0;
+    }
+
+    .navbar:hover .nav-links {
+        display: flex; /* Show links on hover (optional) */
+    }
+
+    h2 {
+        font-size: 24px; /* Slightly smaller heading for tablets */
+    }
+
+    h3 {
+        font-size: 20px; /* Slightly smaller article title */
+    }
+
+    article {
+        padding: 0 10px; /* Padding for articles */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px; /* Smaller logo size */
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Smaller margins */
+        margin-left: 140px;
+    }
+
+    .blog {
+        padding: 240px 0; /* Less padding for mobile */
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+
+    h3 {
+        font-size: 18px; /* Smaller article title for mobile */
+    }
+
+    article {
+        padding: 0 5px; /* Less padding for articles */
+    }
+}

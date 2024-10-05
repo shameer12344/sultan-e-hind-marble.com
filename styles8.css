@@ -1,0 +1,279 @@
+/*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    height: 350px;
+    width: 380px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    margin-left: 700px;
+    list-style-type: none;
+}
+.inputtext{
+    height: 50px;
+    margin-top: 20px;
+    width: 310px;
+    margin-left: 25px;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    font-size: 20px;
+}
+.inputtext:hover{
+    border: 2px solid blue;
+}
+.inputpassword{
+    height: 50px;
+    margin-top: 10px;
+    width: 310px;
+    margin-left: 25px;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    font-size: 20px;
+} 
+.inputpassword:hover{
+    border: 2px solid blue;
+}
+.container button{
+    width: 310px;
+    height: 55px;
+    margin-left: 25px;
+    background-color: rgb(68, 68, 243);
+    border-radius: 5px;
+    color: #f3f3f3;
+    border: 2px solid gainsboro;
+}
+.container button:hover{
+    background-color: royalblue;
+}
+.div1 h1{
+    font-size: 50px;
+    color:rgb(68, 68, 243);
+    margin-top: 100px;
+    margin-left: 200px;
+    list-style-type: none;
+}
+.container ul li a{
+    color: rgb(68, 68, 243);
+    margin-left: 110px;
+    text-decoration: none;
+}
+hr{
+    width: 340px;
+    margin-left: 20px;
+}
+.div3 button{
+    width: 160px;
+    height: 55px;
+    background-color: darkgreen;
+    color: #fff;
+    text-align: center;
+    margin-left: 110px;
+}
+.div3 button:hover{
+    background-color: darkolivegreen;
+    list-style-type: none;
+}
+.div1 p{
+    margin-left: 200px;
+}
+.navbar {
+    background: #004d40;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Wider form for tablets 
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links on smaller screens 
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller heading for tablets 
+    }
+}
+
+/* Mobile devices 
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px; /* Smaller logo size 
+    }
+
+    button {
+        padding: 12px;  Increased padding for buttons 
+    }
+
+    .div1 h1 {
+        font-size: 20px;  Smaller text for mobile 
+    }
+}*/
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5; /* Light background color */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px; /* Limit max width for better usability */
+    margin: auto;
+    padding: 20px;
+    background: #ffffff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    background: #4267b2; /* Facebook blue */
+    padding: 15px 0;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+}
+
+/* Main Content */
+.div1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.div1 h1 {
+    color: #4267b2; /* Facebook blue */
+}
+
+.inputtext, .inputpassword {
+    width: 100%; /* Full width input fields */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background: #4267b2; /* Facebook blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #365e8d; /* Darker blue on hover */
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li a {
+    color: #4267b2; /* Facebook blue */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Wider form for tablets */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links on smaller screens */
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller heading for tablets */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px; /* Smaller logo size */
+    }
+
+    button {
+        padding: 12px; /* Increased padding for buttons */
+    }
+
+    .div1 h1 {
+        font-size: 20px; /* Smaller text for mobile */
+    }
+}

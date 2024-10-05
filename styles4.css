@@ -1,0 +1,105 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 150px;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.img1{
+    height: 300px;
+    width: 300px;
+}
+.img3{
+    height: 300px;
+    width: 300px;
+}
+.img2{
+    height: 300px;
+    width: 300px;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-image:linear-gradient(rgb(176, 40, 40),rgb(92, 100, 175), rgb(112, 58, 88));
+    background-repeat: none;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #004d40;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        /*display: none; /* Hide links by default */
+        width: 100%;
+        background: #004d40; /* Match navbar color */
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        left: 0;
+        padding: 15px 0;
+    }
+
+    .navbar:hover .nav-links {
+        display: flex; /* Show links on hover (optional) */
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px; /* Smaller logo size */
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Smaller margins */
+    }
+
+    .gallery {
+        padding: 180px 0; /* Less padding for mobile */
+        padding-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+}

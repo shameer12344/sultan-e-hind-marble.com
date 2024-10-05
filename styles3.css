@@ -1,0 +1,109 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product {
+    margin: 15px;
+    width: 250px;
+    background: #b2dfdb;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition:  0.3s;
+}
+.product:hover {
+    transform: scale(1.05);
+}
+.product img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 300px;
+}
+.product .container h2{
+padding: 180px 0;
+text-align: center;
+font-family: sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #004d40;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Hide links by default */
+        width: 100%;
+        background: #004d40; /* Match navbar color */
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        left: 0;
+        padding: 15px 0;
+    }
+
+    .navbar:hover .nav-links {
+        display: flex; /* Show links on hover (optional) */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px; /* Smaller logo size */
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Smaller margins */
+    }
+
+    .products {
+        padding: 170px 0; /* Less padding for mobile */
+        padding-bottom: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+}

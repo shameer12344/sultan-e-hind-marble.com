@@ -1,0 +1,97 @@
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form { display: flex; flex-direction: column; align-items: center; }
+.contact input, .contact textarea { width: 300px; padding: 10px; margin: 10px 0; border: 1px solid #0f0d0d; border-radius: 5px;    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+.btm{
+    height: 35px;
+    width: 135px;
+    background-color: black;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    color: #b2dfdb;
+    border-radius: 20px;
+}
+.btm:hover{
+    background-color: #333;
+}
+.contact .container h2{
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+    background-color: bisque;
+}
+.container2{
+    height: 90px;
+    width: 1470;
+    background-color: aqua;
+}
+.navbar {
+    background: #004d40;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    margin-right: 80px;
+}
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center; /* Center align for mobile */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller heading for tablets */
+    }
+
+    input, textarea {
+        max-width: 90%; /* Wider input fields on smaller screens */
+    }
+
+    h1 {
+        font-size: 18px; /* Smaller text for mobile */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px; /* Smaller logo size */
+    }
+
+    .btm {
+        width: 100%; /* Full width button on mobile */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+
+    h1 {
+        font-size: 16px; /* Smaller text for mobile */
+    }
+}
